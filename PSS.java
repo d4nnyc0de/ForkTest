@@ -5,6 +5,7 @@ import java.util.Random;
 public class PSS {
 public static void main(String args[]) 
 {
+	int gittest;
 	int com_rnd;
 	int player;
 	int com_win=0;
