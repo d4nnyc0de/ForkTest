@@ -1,4 +1,4 @@
-//push´ú¸Õ
+//push´ú¸Õ push test
 import java.io.*;
 import java.util.Scanner;
 import java.util.Random;
