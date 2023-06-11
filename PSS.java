@@ -1,4 +1,5 @@
-//push´ú¸Õ push test
+//pushæ¸¬è©¦ push test
+//pull test
 import java.io.*;
 import java.util.Scanner;
 import java.util.Random;
@@ -22,19 +23,19 @@ public static void main(String args[])
 		}
 	System.out.println("F");
 	System.out.println("| -3 | -2 | -1 |  0 |  1 |  2 |  3 |");
-	System.out.print("¿é¤J°Å¤M¥ÛÀY¥¬(¼Æ¦r): °Å¤M(1) ¥¬(2) ¥ÛÀY(3) ");
+	System.out.print("è¼¸å…¥å‰ªåˆ€çŸ³é ­å¸ƒ(æ•¸å­—): å‰ªåˆ€(1) å¸ƒ(2) çŸ³é ­(3) ");
 	player = scanner.nextInt();
 	com_rnd = (int)(Math.random()*3)+1;
 	switch(com_rnd)
 	{
 		case 1:
-		System.out.println("¹q¸£:°Å¤M");
+		System.out.println("é›»è…¦:å‰ªåˆ€");
 		break;
 		case 2:
-		System.out.println("¹q¸£:¥¬");
+		System.out.println("é›»è…¦:å¸ƒ");
 		break;
 		case 3:
-		System.out.println("¹q¸£:¥ÛÀY");
+		System.out.println("é›»è…¦:çŸ³é ­");
 		break;
 	}
 	
@@ -44,19 +45,19 @@ public static void main(String args[])
 		{
 			F_count-=5;
 			com_win+=1;
-			System.out.println("------§A¿é¤F------");
+			System.out.println("------ä½ è¼¸äº†------");
 		}
 		break;
 		case 0:
 		{
-			System.out.println("------¥­¤â------");
+			System.out.println("------å¹³æ‰‹------");
 		}
 		break;
 		case 1:
 		{
 			F_count +=5;
 			player_win+=1;
-			System.out.println("------§AÄ¹¤F------");
+			System.out.println("------ä½ è´äº†------");
 		}
 	}
 	if(com_win==4)
@@ -80,10 +81,10 @@ public static void main(String args[])
 
 static public int intwhoWin(int com ,int player)
 {
-	//-1¿é 0¥­¤â 1Ä¹
+	//-1è¼¸ 0å¹³æ‰‹ 1è´
 	switch(player)
 	{
-		case 1: //°Å¤M
+		case 1: //å‰ªåˆ€
 		if(com == 1)
 		{
 			return 0;
@@ -96,7 +97,7 @@ static public int intwhoWin(int com ,int player)
 		{
 			return -1;
 		}
-		case 2: //¥¬
+		case 2: //å¸ƒ
 		if(com == 1)
 		{
 			return -1;
@@ -109,7 +110,7 @@ static public int intwhoWin(int com ,int player)
 		{
 			return 1;
 		}
-		case 3: //¥ÛÀY
+		case 3: //çŸ³é ­
 		if(com == 1)
 		{
 			return 1;
